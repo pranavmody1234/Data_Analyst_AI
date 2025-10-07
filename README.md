@@ -63,9 +63,15 @@ Once uploaded, you can:
 
 ## 🧠 How It Works
 
+![Homepage](homepage.png)
+
 1. **Upload Dataset** → CSV or Excel file read into `st.session_state.df`.
+    ![Data Upload](data.png)
+
 
 2. **Preview & Summary** → Users can view data sample and statistics.
+   ![Data Summary](data_summary.png)
+
 
 3. **Ask Questions** → User enters natural-language query in chat input.
 
@@ -75,16 +81,22 @@ Once uploaded, you can:
      - Chart configuration JSON  
      - Statistical summary or explanation  
      - *(or)* Dashboard structure
+![Query Result](query.png)
+
 
 5. **Chart Rendering**
    - Extracts JSON configuration  
    - Generates chart via **Matplotlib**  
    - Displays visualization with **download option**
+![Chart](chart.png)
+
 
 6. **SQL Querying**
    - Converts natural language → SQL using **OpenAI**
    - Executes query with **PandasQL**
    - Displays query results directly in **Streamlit**
+![SQL Query](get_sqlQuery.png)
+
 
 7. **Chat History**
    - Preserved across interactions using `st.session_state.chat_history`
